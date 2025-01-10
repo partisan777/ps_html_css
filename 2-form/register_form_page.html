@@ -6,17 +6,38 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        <h1>Регистрация</h1>
-        <div>
-            <span>Уже есть аккаунт?</span>
-            <a href="#">Войти</a>
-        </div>
-        <input type="text" value="Моя компания"/>
-        <input type="text" placeholder="Имя      Фамилия"/>
-        <input type="email" placeholder="Email"/>
-        <input type="checkbox" name="options" required /><span>Я прочитал и принимаю</span><a href="#">Условия использования</a>
-        <button type="submit">Зарегистрироваться</button>
-    </form>
+    <main>
+        <form action="">
+            <div>
+                <h1>Регистрация</h1>
+                <p>Уже есть аккаунт?<a href="#">Войти</a></p>
+            </div>
+            <div>
+                <div>
+                    <label for="company"></label>
+                    <input type="text" placeholder="Компания" id="company" name="company" value="Моя компания">
+                </div>
+                <div>
+                    <div>
+                        <label for="surname"></label>
+                        <input type="text" placeholder="Фамилия" id="surname" name="surname_name">
+                    </div>
+                    <div>
+                        <label for="firstname"></label>
+                        <input type="text" placeholder="Имя" id="firstname" name="first_name">
+                    </div>
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" placeholder="E-mail" id="email" name="email">
+                </div>
+                <div>
+                    <label for="agreement"></label>
+                    <input type="checkbox" name="agreement" id="agreement" required><span>Я прочитал и принимаю</span><a href="#">Условия использования</a></input>
+                </div>
+                <button type="submit">Зарегистрироваться</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
