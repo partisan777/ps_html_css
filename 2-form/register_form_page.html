@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main>
         <form action="">
             <div>
                 <h1>Регистрация</h1>
-                <p>Уже есть аккаунт?<a href="#">Войти</a></p>
+                <span id="login_label">Уже есть аккаунт? <a href="#" id="login_link">Войти</a></span>
             </div>
             <div>
                 <div>
@@ -33,9 +34,9 @@
                 </div>
                 <div>
                     <label for="agreement"></label>
-                    <input type="checkbox" name="agreement" id="agreement" required><span>Я прочитал и принимаю</span><a href="#">Условия использования</a></input>
+                    <input type="checkbox" name="agreement" id="agreement" required><span id="agreement_label">Я прочитал и принимаю</span><a id="agreement_link" href="#">Условия использования</a></input>
                 </div>
-                <button type="submit">Зарегистрироваться</button>
+                <button type="submit" id="button_submit">Зарегистрироваться</button>
             </div>
         </form>
     </main>
