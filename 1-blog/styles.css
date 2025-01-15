@@ -1,7 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: linear-gradient(180deg, #374151 0%, #111827 100%);
-
 }
+
+#Rectangle_2 {
+    max-width: 25px;
+    max-height: 25px;
+    border-radius: 3px;
+}
+
+#Rectangle_2_label {
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+}
+
 #nav_container {
     margin-bottom: 99px;
 }
@@ -9,13 +25,14 @@ body {
 li {
     list-style-type: none;
 }
+
 ul {
     padding-left: 0;
 }
 
 .li_link {
-    width: 90px;
-    height: 19px;
+    max-width: 90px;
+    max-height: 19px;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
@@ -28,8 +45,8 @@ ul {
 }
 
 .search_input {
-    width: 224px;
-    height: 40px;
+    max-width: 224px;
+    max-height: 40px;
     border-radius: 100px;
     background: #1F293799;
     opacity: 60%;
@@ -48,13 +65,13 @@ ul {
 
 .search_input::placeholder:before {
     content: url('./img/search_icon.svg');
-    width: 9.33px;
-    height: 9.33px;
+    max-width: 9.33px;
+    max-height: 9.33px;
 }
 
 .topic_label {
-    width: 72px;
-    height: 16px;
+    max-width: 72px;
+    max-height: 16px;
     opacity: 0.6px;
     font-family: Roboto;
     font-size: 14px;
@@ -68,8 +85,8 @@ ul {
 }
 
 .main_label {
-    width: 525px;
-    height: 76px;
+    max-width: 525px;
+    max-height: 76px;
     font-family: Roboto;
     font-size: 24px;
     font-weight: 400;
@@ -83,16 +100,16 @@ ul {
 
 
 .article_img_container {
-    width: 50px;
-    height: 50px;
+    max-width: 50px;
+    max-height: 50px;
     border-radius: 25%;
     margin-bottom: 67px;
 }
 
 
 .author_name {
-    width: 148px;
-    height: 28px;
+    max-width: 148px;
+    max-height: 28px;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
@@ -104,8 +121,8 @@ ul {
 }
 
 .author_role {
-    width: 85px;
-    height: 28px;
+    max-width: 85px;
+    max-height: 28px;
     opacity: 0.6px;
     font-family: Roboto;
     font-size: 14px;
@@ -118,14 +135,14 @@ ul {
 }
 
 .article_main_img {
-    width: 896px;
-    height: 594px;
+    max-width: 896px;
+    max-height: 594px;
     border-radius: 5px;
 }
 
 .first_article_paragraph {
-    width: 708px;
-    /* height: 101px; */
+    max-width: 708px;
+    /* max-height: 101px; */
     font-family: Roboto;
     font-size: 20px;
     font-weight: 400;
@@ -137,7 +154,7 @@ ul {
 }
 
 .article_paragraph {
-    width: 708px;
+    max-width: 708px;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
