@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <a class="li_link" href="#"><span><img src="./img/Rectangle_2.svg" alt="Rectangle_2" id="Rectangle_2"> B </span><span>Мой блог</span></a>
+        <a class="li_link" href="#"><span class="logo__img"> B </span><span> Мой блог</span></a>
         <nav class="nav_container">
             <ul>
                 <li><a class="li_link" href="#">HTML и CSS</a></li>
@@ -16,7 +16,10 @@
                 <li><a class="li_link"href="#">Backend</a></li>
             </ul>
         </nav>
-        <input type="text" class="search_input" placeholder="Поиск"/>
+        <form class="search_form">
+            <img class="search_input_icon" src="./img/search_icon.svg" alt="search">
+            <input type="search" class="search_input" placeholder="Поиск"/>
+        </form>
     </header>
     <main>
         <p>
@@ -35,7 +38,7 @@
                 <p class="author_name">Наталья Васильева</p>
                 <p class="author_role">Разработчик</p>
             </div>
-            <article>
+            <article class="article_container">
                 <img  class="article_main_img" src="./img/Rectangle_181.png" alt="Rectangle_181" />
                 <section>
                     <p class="first_article_paragraph">Теория цвета — это особенности эмоционального восприятия человеком тех или иных цветовых решений. Цвета и различные их комбинации влияют на психику человека, а значит, во многом определяют его поведение. Маркетологи и веб-дизайнеры хорошо знают, что правильно подобранная цветовая гамма сайта помогает привлечь и удержать внимание пользователей, сформировать положительное отношение к продукту, подтолкнуть посетителей к совершению целевых действий, повысить конверсию.</p>
