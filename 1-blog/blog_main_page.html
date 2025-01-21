@@ -4,48 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
+        <a class="li_link" href="#"><span class="logo__img"> B </span><span> Мой блог</span></a>
+        <nav class="nav_container">
             <ul>
-                <li><a href="#"><img src="./img/Rectangle_2.svg" alt="Rectangle_2" />Мой блог</a></li>
-                <li><a href="#">HTML и CSS</a></li>
-                <li><a href="#">Frontend</a></li>
-                <li><a href="#">Backend</a></li>
+                <li><a class="li_link" href="#">HTML и CSS</a></li>
+                <li><a class="li_link" href="#">Frontend</a></li>
+                <li><a class="li_link"href="#">Backend</a></li>
             </ul>
         </nav>
-        <input type="text" placeholder="Поиск"/>
+        <form class="search_form">
+            <img class="search_input_icon" src="./img/search_icon.svg" alt="search">
+            <input type="search" class="search_input" placeholder="Поиск"/>
+        </form>
     </header>
-    <p>
-        <span>FRONTEND</span>
-        <span>&bull;</span>
-        <time datetime="2024-05-12">12 мая 2024</time>
-    <p>
-    <h1>
-        Теория цвета - Как цвет влияет на поведение потребителей
-    </h1>
-    <div>
+    <main>
+        <p>
+            <span class="topic_label">FRONTEND</span>
+            <span class="topic_label">&bull;</span>
+            <time class="topic_label" datetime="2024-05-12">12 мая 2024</time>
+        <p>
+        <h1 class="main_label">
+            Теория цвета - Как цвет влияет на поведение потребителей
+        </h1>
         <div>
-            <img src="./img/Ellipse_1.png" alt="Ellipse_1" />
+            <div class="article_img_container">
+                <img class="article_img" src="./img/Ellipse_1.png" alt="Ellipse_1" />
+            </div>
+            <div class="author_container">
+                <p class="author_name">Наталья Васильева</p>
+                <p class="author_role">Разработчик</p>
+            </div>
+            <article class="article_container">
+                <img  class="article_main_img" src="./img/Rectangle_181.png" alt="Rectangle_181" />
+                <section>
+                    <p class="first_article_paragraph">Теория цвета — это особенности эмоционального восприятия человеком тех или иных цветовых решений. Цвета и различные их комбинации влияют на психику человека, а значит, во многом определяют его поведение. Маркетологи и веб-дизайнеры хорошо знают, что правильно подобранная цветовая гамма сайта помогает привлечь и удержать внимание пользователей, сформировать положительное отношение к продукту, подтолкнуть посетителей к совершению целевых действий, повысить конверсию.</p>
+                    <p class="article_paragraph">Универсального ответа на вопрос, как тот или иной цвет влияет на разных людей, нет. Эмоциональная и поведенческая реакция каждого человека зависит от личного опыта. Вместе с тем можно выделить определенные закономерности влияния цветов на поведение пользователей.</p>
+                    <p class="article_paragraph">В исследовании «Влияние цвета на маркетинг» <a class="article_paragraph_link" href="#">(Impact of color on marketing)</a> говорится, что использование разных цветов может существенно влиять на настроение и поведение потребителей. Утверждается, что от 60 до 90% покупателей (в зависимости от категории продукта) дают положительную или отрицательную оценку товару, основываясь только на его цвете.</p>
+                </section>
+            </article>
         </div>
-        <div>
-            <p>Наталья Васильева</p>
-            <p>Разработчик</p>
-        </div>
-        <article>
-            <img src="./img/Rectangle_181.png" alt="Rectangle_181" />
-            <section>
-                <p>Теория цвета — это особенности эмоционального восприятия человеком тех или иных цветовых решений. Цвета и различные их комбинации влияют на психику человека, а значит, во многом определяют его поведение. Маркетологи и веб-дизайнеры хорошо знают, что правильно подобранная цветовая гамма сайта помогает привлечь и удержать внимание пользователей, сформировать положительное отношение к продукту, подтолкнуть посетителей к совершению целевых действий, повысить конверсию.</p>
-                <p>Универсального ответа на вопрос, как тот или иной цвет влияет на разных людей, нет. Эмоциональная и поведенческая реакция каждого человека зависит от личного опыта. Вместе с тем можно выделить определенные закономерности влияния цветов на поведение пользователей.</p>
-                <p>В исследовании «Влияние цвета на маркетинг» <a href="#">(Impact of color on marketing)</a> говорится, что использование разных цветов может существенно влиять на настроение и поведение потребителей. Утверждается, что от 60 до 90% покупателей (в зависимости от категории продукта) дают положительную или отрицательную оценку товару, основываясь только на его цвете.</p>
-            </section>
-        </article>
-        <footer>
-            <span>
-                Все права защищены (c) 2024
-            </span>
-        </footer>
-    </div>
+    </main>
+    <footer class="footer_container">
+        <span class="footer_description">
+            Все права защищены (c) 2024
+        </span>
+    </footer>
 </body>
 </html>
