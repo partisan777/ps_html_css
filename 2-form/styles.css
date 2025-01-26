@@ -45,6 +45,35 @@ a {
     color: #089FE0;
 }
 
+
+.registration_form{
+    display: flex;
+    flex-direction: column;
+}
+
+.registration_form_inputs {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.registration_form_small_inputs {
+    width: 394px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.registration_form {
+    display: flex;
+    /* flex-flow: column wrap; */
+    align-items: center;
+    gap: 10px;
+}
+
 #login_link {
     font-size: 18px;
     line-height: 24.51px;
@@ -65,7 +94,7 @@ a {
 }
 
 #surname, #firstname {
-    width: 151px;
+    width: 181px;
     height: 45px;
     border-radius: 5px;
     border: 1px;
