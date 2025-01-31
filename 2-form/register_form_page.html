@@ -8,37 +8,42 @@
 </head>
 <body>
     <main>
+    <div class="form_container">
         <form class="registration_form" action="">
             <div class="registration_form_header">
                 <h1>Регистрация</h1>
-                <div><span id="login_label">Уже есть аккаунт? <a href="#" id="login_link">Войти</a></span></div>
+                <span id="login_label">Уже есть аккаунт? <a href="#" id="login_link">Войти</a></span>
             </div>
-            <div class="registration_form_inputs">
+            <div>
+                <label for="company"></label>
+                <input type="text" placeholder="Компания" id="company" name="company" value="Мой компания" required>
+            </div>
+            <div class="registration_form_small_inputs">
                 <div>
-                    <label for="company"></label>
-                    <input type="text" placeholder="Компания" id="company" name="company" value="Моя компания">
-                </div>
-                <div class="registration_form_small_inputs">
-                    <div>
-                        <label for="surname"></label>
-                        <input type="text" placeholder="Фамилия" id="surname" name="surname_name">
-                    </div>
-                    <div>
-                        <label for="firstname"></label>
-                        <input type="text" placeholder="Имя" id="firstname" name="first_name">
-                    </div>
+                    <label for="surname"></label>
+                    <input type="text" placeholder="Фамилия" id="surname" name="surname_name" required>
                 </div>
                 <div>
-                    <label for="email"></label>
-                    <input type="email" placeholder="E-mail" id="email" name="email">
+                    <label for="firstname"></label>
+                    <input type="text" placeholder="Имя" id="firstname" name="first_name" required>
                 </div>
-                <button type="submit" id="button_submit">Зарегистрироваться</button>
-                <div>
-                    <label for="agreement"></label>
-                    <input type="checkbox" name="agreement" id="agreement" required><span id="agreement_label">Я прочитал и принимаю</span><a id="agreement_link" href="#">Условия использования</a></input>
+            </div>
+            <div>
+                <label for="email"></label>
+                <input type="email" placeholder="E-mail" id="email" name="email" required>
+            </div>
+            <button type="submit" id="button_submit">
+                <div class="button_label">
+                    <span class="button_label_span">Зарегистрироваться</span>
+                    <img class="img_button" src="./images/Arrow1.svg" alt="arrow">
                 </div>
+            </button>
+            <div>
+                <label for="agreement"></label>
+                <input type="checkbox" name="agreement" id="agreement" required><span id="agreement_label"> Я прочитал и принимаю  </span><a id="agreement_link" href="#">Условия использования</a></input>
             </div>
         </form>
+    </div>
     </main>
 </body>
 </html>
