@@ -1,0 +1,264 @@
+.prices {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Inter;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-template: "a a a"
+                   "b b b"
+                   "c d e"
+                   ;
+    padding: 60px 392px;
+    grid-column-gap: 24px;
+}
+
+.prices_header {
+    grid-area: a;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.prices_label  {
+    grid-area: b;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23.8px;
+    text-align: center;
+    color: #4E5D7C80;
+    margin-bottom: 40px;
+
+}
+
+.prices_1mon   {
+    grid-area: c;
+}
+
+.prices_6mon   {
+    grid-area: d;
+}
+
+.prices_12mon  {
+    grid-area: e;
+}
+
+.prices_1mon, .prices_6mon, .prices_12mon {
+    max-width: 369x;
+    max-height: 507px;
+    gap: 0px;
+    /* background: var(--primary-color); */
+    padding: 46px 40px 48px 40px;
+    box-shadow: 0px 0px 32px 0px #4E5D7C29;
+    border-radius: 8px;
+    justify-items: stretch;
+    display: grid;
+    grid-template: "a a"
+                   "b b"
+                   "c c"
+                   "d e"
+                   "l l"
+                   "f g"
+                   "l1 l1"
+                   "h j"
+                   "i i"
+                   ;
+    grid-template-columns: 65% 35%;
+}
+
+.price_profit_marker {
+    grid-area: a;
+    margin-bottom: 16px;
+}
+
+.price_profit_marker span {
+    width: 254px;
+    height: 29px;
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 21px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.price_period_header {
+    grid-area: b;
+    max-width: 156px;
+    line-height: 38px;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38.4px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.price_period_description {
+    grid-area: c;
+    max-width: 300px;
+    max-height: 48px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23.8px;
+    text-align: left;
+    color: #4E5D7C80;
+    opacity: 0.75;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+.price_total_label {
+    grid-area: d;
+}
+
+.price_total_amount {
+    grid-area: e;
+}
+
+.price_profit_label {
+    grid-area: f;
+}
+
+.price_profit_amount {
+    grid-area: g;
+}
+
+.price_month_cost_label {
+    grid-area: h;
+}
+
+.price_month_cost_amount {
+    grid-area: j;
+    padding-left: 2px;
+}
+
+.button_contanier {
+    grid-area: i;
+}
+
+.line {
+    grid-area: l;
+}
+
+.line1 {
+    grid-area: l1;
+}
+
+.line, .line1 {
+    border-bottom: 1px solid #4E5D7C;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    opacity: 0.10;
+}
+
+.button_contanier button {
+    background-color: var(--primary-color);
+    max-width: 289px;
+    max-height: 48px;
+    color: #FFFFFF;
+    border-style: none;
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 23.8px;
+    border-radius: 47px;
+    padding-top: 12px;
+    padding-right: 63px;
+    padding-bottom: 12px;
+    padding-left: 63px;
+    white-space: nowrap;
+    margin-top: 40px;
+
+}
+
+.price_total_label, .price_profit_label, .price_month_cost_label {
+    max-width: 135px;
+    max-height: 38px;
+    white-space: nowrap;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20.4px;
+    text-align: left;
+    color: #4E5D7C;
+    opacity: 0.5;
+    justify-content: center;
+    align-content: center;
+}
+
+.price_total_amount, .price_profit_amount, .price_month_cost_amount {
+    max-width: 120px;
+    max-height: 38px;
+    margin-right: 25px;
+    white-space: nowrap;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20.4px;
+    text-align: left;
+    color: #4E5D7C;
+    opacity: 0.5;
+    justify-content: center;
+    align-content: center;
+}
+
+.profit_without_color_class, .profit_orange_color_class {
+    max-width: 99px;
+    max-height: 36px;
+    font-size: 17px;
+    border-radius: 8px;
+    padding: 3px 10px;
+
+}
+
+.price_profit_amount  .profit_orange_color_class {
+    opacity: 1;
+}
+
+.profit_orange_color_class {
+    color: #FFFFFF;
+    background: #fbc02b;
+}
+
+.prices_1mon:hover  .price_total_label,
+.prices_6mon:hover  .price_total_label,
+.prices_12mon:hover .price_total_label,
+.prices_1mon:hover  .price_profit_label,
+.prices_6mon:hover  .price_profit_label,
+.prices_12mon:hover .price_profit_label,
+.prices_1mon:hover  .price_month_cost_label,
+.prices_6mon:hover  .price_month_cost_label,
+.prices_12mon:hover .price_month_cost_label,
+.prices_1mon:hover  .price_total_amount,
+.prices_6mon:hover  .price_total_amount,
+.prices_12mon:hover .price_total_amount,
+.prices_1mon:hover  .price_profit_amount,
+.prices_6mon:hover  .price_profit_amount,
+.prices_12mon:hover .price_profit_amount,
+.prices_1mon:hover  .price_month_cost_amount,
+.prices_6mon:hover  .price_month_cost_amount,
+.prices_12mon:hover .price_month_cost_amount {
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.prices_1mon:hover  .price_period_description,
+.prices_6mon:hover  .price_period_description,
+.prices_12mon:hover .price_period_description {
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.prices_1mon:hover, .prices_6mon:hover, .prices_12mon:hover {
+    background-color: var(--primary-color);
+}
+
+.prices_1mon:hover  button,
+.prices_6mon:hover  button,
+.prices_12mon:hover button {
+    background-color: #FFFFFF;
+    color: var(--primary-color);;
+}

@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1920px 1fr;
+    justify-items: center;
+    --primary-color: #357EFE;
+}
+
+main {
+    max-width: 1920px;
+    height: 100px;
+}
