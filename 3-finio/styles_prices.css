@@ -87,6 +87,10 @@
     padding: 5px 10px;
 }
 
+.price_profit_marker span:empty {
+    opacity: 0;
+}
+
 .price_period_header {
     grid-area: b;
     max-width: 156px;
