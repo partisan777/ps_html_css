@@ -51,8 +51,10 @@
     max-width: 369x;
     max-height: 507px;
     gap: 0px;
-    /* background: var(--primary-color); */
-    padding: 46px 40px 48px 40px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    padding-top: 48px;
     box-shadow: 0px 0px 32px 0px #4E5D7C29;
     border-radius: 8px;
     justify-items: stretch;
@@ -73,11 +75,12 @@
 .price_profit_marker {
     grid-area: a;
     margin-bottom: 16px;
+    margin-right: 162px;
 }
 
 .price_profit_marker span {
-    width: 254px;
-    height: 29px;
+    max-width: 124px;
+    max-height: 29px;
     background-color: #1ABC9C;
     color: #FFFFFF;
     font-weight: 800;
@@ -93,13 +96,19 @@
 
 .price_period_header {
     grid-area: b;
-    max-width: 156px;
+    max-width: 176px;
+    /* max-height: 39px; */
     line-height: 38px;
     font-size: 32px;
     font-weight: 800;
     line-height: 38.4px;
     text-align: left;
     margin-bottom: 10px;
+}
+
+.price_period_header h3 {
+    margin: 0;
+    padding: 0;
 }
 
 .price_period_description {
@@ -180,33 +189,32 @@
 
 }
 
+.price_total_amount, .price_profit_amount, .price_month_cost_amount,
 .price_total_label, .price_profit_label, .price_month_cost_label {
-    max-width: 135px;
-    max-height: 38px;
     white-space: nowrap;
     font-size: 17px;
     font-weight: 500;
     line-height: 20.4px;
     text-align: left;
     color: #4E5D7C;
-    opacity: 0.5;
     justify-content: center;
     align-content: center;
+    line-height: 20.4px;
+    opacity: 0.7;
+    
+}
+
+
+
+
+.price_total_label, .price_profit_label, .price_month_cost_label {
+    max-width: 135px;
+    max-height: 38px;
 }
 
 .price_total_amount, .price_profit_amount, .price_month_cost_amount {
     max-width: 120px;
     max-height: 38px;
-    margin-right: 25px;
-    white-space: nowrap;
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 20.4px;
-    text-align: left;
-    color: #4E5D7C;
-    opacity: 0.5;
-    justify-content: center;
-    align-content: center;
 }
 
 .profit_without_color_class, .profit_orange_color_class {
@@ -218,7 +226,7 @@
 
 }
 
-.price_profit_amount  .profit_orange_color_class {
+.price_profit_amount {
     opacity: 1;
 }
 
@@ -226,6 +234,7 @@
     color: #FFFFFF;
     background: #fbc02b;
 }
+
 
 .prices_1mon:hover  .price_total_label,
 .prices_6mon:hover  .price_total_label,
